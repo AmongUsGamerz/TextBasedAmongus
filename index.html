@@ -7,8 +7,21 @@
 
     <body>
         
-        <p id="burron"> Click me </p>
+        <p id="burron"> Send </p>
+        <p id="recieve"> Recieve </p>
 
-        <!-- <script src="game.js"></script> -->
+        <script src="client.js"></script>
+
+        <script>
+
+            const but = document.getElementById("burron");
+            const mut = document.getElementById("recieve");
+
+            but.addEventListener("click", (event) => {
+
+                sendMessage(prompt("give a message"))
+            });
+
+        </script>
     </body>
 </html>
